@@ -1,0 +1,2 @@
+[chronos-node] Ready node_id=2 shard_id=0 listen=127.0.0.1:24004 snap_thresh=65
+[chronos-node] wire decode/CRC error (closing socket): wire I/O error: Interrupted system call (os error 4)

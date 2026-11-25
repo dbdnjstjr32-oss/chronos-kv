@@ -1,0 +1,15 @@
+# Rust build outputs & compiled binaries
+/target/
+/bin/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Keep only the flagship verified chaos campaign run_1795521167_328
+/runs/*
+!/runs/run_1795521167_328/
+
+# Editor / OS
+.DS_Store
+*.swp

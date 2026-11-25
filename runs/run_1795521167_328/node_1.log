@@ -1,0 +1,5 @@
+[chronos-node] Ready node_id=1 shard_id=0 listen=127.0.0.1:24003 snap_thresh=65
+[WAL-RECOVERY] dir=/tmp/chronos_ext4_run_1795521167_328/node_1 detected torn/corrupt WAL tail at offset 341 (file_len=350); truncating 9 bytes
+[node 1 shard 0] Boot recovery: snap_idx=390, wal_entries=4, torn_bytes_truncated=9
+[chronos-node] Ready node_id=1 shard_id=0 listen=127.0.0.1:24003 snap_thresh=65
+[chronos-node] wire decode/CRC error (closing socket): wire I/O error: Interrupted system call (os error 4)

@@ -1,0 +1,4 @@
+[chronos-node] Ready node_id=10 shard_id=1 listen=127.0.0.1:24005 snap_thresh=65
+[WAL-RECOVERY] dir=/tmp/chronos_ext4_run_1795521167_328/node_10 detected torn/corrupt WAL tail at offset 641 (file_len=650); truncating 9 bytes
+[node 10 shard 1] Boot recovery: snap_idx=718, wal_entries=7, torn_bytes_truncated=9
+[chronos-node] Ready node_id=10 shard_id=1 listen=127.0.0.1:24005 snap_thresh=65

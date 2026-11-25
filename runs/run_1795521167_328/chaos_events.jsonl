@@ -1,0 +1,13 @@
+{"ts_mono_s": 0.0218, "event": "CLUSTER_BOOTED", "proxy_pid": 430, "tso_pid": 431, "node_pids": {"0": 450, "1": 451, "2": 452, "10": 462, "11": 466, "12": 470}}
+{"ts_mono_s": 0.9034, "event": "GENESIS_SEED_COMMITTED", "accounts": 10, "total_balance": 10000, "reserves": 200}
+{"ts_mono_s": 1.9137, "event": "STAGE1_TCP_MICRO_FRAGMENTATION_ON", "links_updated": 24, "max_chunk_bytes": 2}
+{"ts_mono_s": 4.1156, "event": "STAGE1_TCP_MICRO_FRAGMENTATION_HEALED"}
+{"ts_mono_s": 4.1177, "event": "STAGE2_ASYMMETRIC_PARTITION_ON", "isolated_leader": 0, "one_way_open": "n0->n1", "blackholed": ["n1->n0", "n0<->n2"]}
+{"ts_mono_s": 6.3233, "event": "STAGE2_ASYMMETRIC_PARTITION_HEALED"}
+{"ts_mono_s": 7.3406, "event": "STAGE3_SIGSTOP_ZOMBIE_LEADER", "shard": 1, "frozen_node": 11, "pid": 466}
+{"ts_mono_s": 8.7416, "event": "STAGE3_SIGCONT_ZOMBIE_LEADER_THAWED", "shard": 1, "thawed_node": 11}
+{"ts_mono_s": 9.9703, "event": "STAGE4_SIGKILL_AND_TORN_WAL_INJECTED", "killed_tso": true, "killed_nodes": [1, 10], "torn_wal_bytes_appended": {"1": 9, "10": 9}}
+{"ts_mono_s": 9.9752, "event": "STAGE4_TSO_AND_S1_RESTARTED", "new_tso_pid": 8389, "new_s1_pid": 8390}
+{"ts_mono_s": 12.1785, "event": "STAGE5_S0_RESTARTED_FOR_SNAPSHOT_CATCHUP", "node": 1, "new_pid": 12083}
+{"ts_mono_s": 14.5191, "event": "STAGE6_QUORUM_LOSS_FOLLOWERS_FROZEN", "leader": 0, "frozen_followers": [1, 2]}
+{"ts_mono_s": 15.058, "event": "STAGE6_QUORUM_RESTORED", "quorum_fail_closed_verified": true}

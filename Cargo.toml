@@ -1,0 +1,26 @@
+[package]
+name = "chronos_kv"
+version = "0.1.0"
+edition = "2021"
+description = "Multi-Shard Raft + Strict-Serializable Percolator MVCC Distributed Storage Engine & L4 Chaos Proxy"
+
+[lib]
+name = "chronos_kv"
+path = "src/lib.rs"
+
+[[bin]]
+name = "chronos-tso"
+path = "src/bin/chronos_tso.rs"
+
+[[bin]]
+name = "chronos-node"
+path = "src/bin/chronos_node.rs"
+
+[[bin]]
+name = "chronos-chaos-proxy"
+path = "src/bin/chronos_chaos_proxy.rs"
+
+[profile.release]
+opt-level = 3
+debug = false
+overflow-checks = true

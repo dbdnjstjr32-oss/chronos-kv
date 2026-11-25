@@ -1,0 +1,111 @@
+{
+  "run_id": "run_1795521167_328",
+  "elapsed_seconds": 15.938,
+  "worker_stats": {
+    "transfers_ok": 174,
+    "reserve_withdraw_ok": 57,
+    "reserve_replenish_ok": 57,
+    "ro_audits_ok": 54,
+    "raw_cas_ok": 417,
+    "raw_get_ok": 347,
+    "orphan_secondary_locks_injected": 14,
+    "zombie_primary_prewrites_rejected": 14,
+    "tx_aborts_or_timeouts": 0
+  },
+  "quorum_loss_fail_closed_verified": true,
+  "replica_convergence_verified": true,
+  "snapshots_compacted_verified": true,
+  "wal_torn_write_recovery_verified": true,
+  "wal_recovery_evidence": [
+    "node_1: [WAL-RECOVERY] dir=/tmp/chronos_ext4_run_1795521167_328/node_1 detected torn/corrupt WAL tail at offset 341 (file_len=350); truncating 9 bytes",
+    "node_1: [node 1 shard 0] Boot recovery: snap_idx=390, wal_entries=4, torn_bytes_truncated=9",
+    "node_10: [WAL-RECOVERY] dir=/tmp/chronos_ext4_run_1795521167_328/node_10 detected torn/corrupt WAL tail at offset 641 (file_len=650); truncating 9 bytes",
+    "node_10: [node 10 shard 1] Boot recovery: snap_idx=718, wal_entries=7, torn_bytes_truncated=9"
+  ],
+  "replica_statuses": {
+    "0": {
+      "shard_id": 0,
+      "role": 0,
+      "term": 4,
+      "commit_index": 736,
+      "last_applied": 736,
+      "snapshot_index": 715,
+      "log_len": 21,
+      "state_crc32": "0xf0ae5e36"
+    },
+    "1": {
+      "shard_id": 0,
+      "role": 0,
+      "term": 4,
+      "commit_index": 736,
+      "last_applied": 736,
+      "snapshot_index": 715,
+      "log_len": 21,
+      "state_crc32": "0xf0ae5e36"
+    },
+    "2": {
+      "shard_id": 0,
+      "role": 2,
+      "term": 4,
+      "commit_index": 736,
+      "last_applied": 736,
+      "snapshot_index": 716,
+      "log_len": 20,
+      "state_crc32": "0xf0ae5e36"
+    },
+    "10": {
+      "shard_id": 1,
+      "role": 0,
+      "term": 3,
+      "commit_index": 1373,
+      "last_applied": 1373,
+      "snapshot_index": 1368,
+      "log_len": 5,
+      "state_crc32": "0x0946cb11"
+    },
+    "11": {
+      "shard_id": 1,
+      "role": 0,
+      "term": 3,
+      "commit_index": 1373,
+      "last_applied": 1373,
+      "snapshot_index": 1368,
+      "log_len": 5,
+      "state_crc32": "0x0946cb11"
+    },
+    "12": {
+      "shard_id": 1,
+      "role": 2,
+      "term": 3,
+      "commit_index": 1373,
+      "last_applied": 1373,
+      "snapshot_index": 1368,
+      "log_len": 5,
+      "state_crc32": "0x0946cb11"
+    }
+  },
+  "oracle_verification": {
+    "overall_valid": true,
+    "strict_serializability": {
+      "valid": true,
+      "committed_txn_count": 344,
+      "ro_snapshots_verified": 55,
+      "reserve_invariant_checks": 55,
+      "dsg_1sr_edges": 1590,
+      "dsg_strict_rt_edges": 1390,
+      "anomalies": []
+    },
+    "wgl_linearizability": {
+      "reg_alpha": {
+        "valid": true,
+        "op_count": 380,
+        "detail": "checked 380 ops in 381 WGL state transitions"
+      },
+      "m_reg_beta": {
+        "valid": true,
+        "op_count": 384,
+        "detail": "checked 384 ops in 384 WGL state transitions"
+      }
+    }
+  }
+}
