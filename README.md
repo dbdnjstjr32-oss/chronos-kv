@@ -15,6 +15,23 @@
 
 </div>
 
+## Live 8-Process Cluster & 6-Stage Chaos Verification Demo
+
+<div align="center">
+
+<img src="docs/media/demo.gif" alt="ChronosKV 8-Process Raft + Percolator Chaos Campaign Live Demo" width="100%" />
+
+<table>
+  <tr>
+    <td align="center" width="100%">
+      <img src="docs/media/chaos_terminal.png" alt="ChronosKV Live Chaos Campaign & Formal Oracle Output" width="85%" /><br/>
+      <sub><b>Real 8-ELF Process Run (`chronos-node` ×6, `chronos-tso`, `chronos-chaos-proxy`) · 1,246 Txns · Adya/Elle 1SR + WGL PASSED</b></sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
 ---
 
 ## Overview
